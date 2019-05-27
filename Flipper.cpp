@@ -1,8 +1,6 @@
 int** Flipper_VN(int **MatViz, int lin, int col, int **Teste, int W)
 {
 
-	int Pop = lin * col;
-
 	int vallin = 0;
 	int valcol = 0;
 	while (vallin < lin && valcol < col)
@@ -45,8 +43,6 @@ int** Flipper_VN(int **MatViz, int lin, int col, int **Teste, int W)
 
 int** Flipper_EVN(int **MatViz, int lin, int col, int **Teste, int W)
 {
-
-	int Pop = lin * col;
 
 	int vallin = 0;
 	int valcol = 0;
@@ -106,8 +102,6 @@ int** Flipper_EVN(int **MatViz, int lin, int col, int **Teste, int W)
 
 int** Flipper_Moore(int **MatViz, int lin, int col, int **Teste, int W)
 {
-
-	int Pop = lin * col;
 
 	int vallin = 0;
 	int valcol = 0;
@@ -172,8 +166,6 @@ int** Flipper_Moore(int **MatViz, int lin, int col, int **Teste, int W)
 
 int** Flipper_Manhattan(int **MatViz, int lin, int col, int **Teste, int W)
 {
-
-	int Pop = lin * col;
 
 	int vallin = 0;
 	int valcol = 0;
