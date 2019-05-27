@@ -20,22 +20,22 @@ int** Flipper_VN(int **MatViz, int lin, int col, int **Teste, int W)
 		if ((vallin - 1) >= 0)
 		{
 
-			MatViz[(vallin - 1)][valcol] += MatViz[(vallin - 1)][valcol];
+			MatViz[(vallin - 1)][valcol] ++;
 		}
 		//verifica se a coluna à esquerda está no intervalo [0,col)
 		if ((valcol - 1) >= 0)
 		{
-			MatViz[vallin][(valcol - 1)] += MatViz[vallin][(valcol - 1)];
+			MatViz[vallin][(valcol - 1)] ++;
 		}
 		//verifica se a linha de baixo está no intervalo [0,lin)
 		if ((vallin + 1) < lin)
 		{
-			MatViz[(vallin + 1)][valcol] += MatViz[(vallin + 1)][valcol];
+			MatViz[(vallin + 1)][valcol] ++;
 		}
 		//verifica se a coluna à direita está no intervalo [0,col)
 		if ((valcol + 1) < col)
 		{
-			MatViz[vallin][(valcol + 1)] += MatViz[vallin][(valcol + 1)];
+			MatViz[vallin][(valcol + 1)] ++;
 		}
 	}
 
