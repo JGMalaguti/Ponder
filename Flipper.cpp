@@ -14,8 +14,7 @@ int** Flipper_VN(int **MatViz, int lin, int col, int **Teste, int W)
 		if (vallin < lin && valcol >= col)
 			valcol = 0;
 	}
-	if (vallin < lin && valcol < col)
-	{
+
 		//verifica se a linha de cima está no intervalo [0,lin)
 		if ((vallin - 1) >= 0)
 		{
@@ -37,7 +36,7 @@ int** Flipper_VN(int **MatViz, int lin, int col, int **Teste, int W)
 		{
 			MatViz[vallin][(valcol + 1)] ++;
 		}
-	}
+
 
 	return MatViz;
 }
@@ -60,8 +59,7 @@ int** Flipper_EVN(int **MatViz, int lin, int col, int **Teste, int W)
 		if (vallin < lin && valcol >= col)
 			valcol = 0;
 	}
-	if (vallin < lin && valcol < col)
-	{
+
 		//verifica se a linha de cima está no intervalo [0,lin)
 		if ((vallin - 1) >= 0)
 		{
@@ -100,7 +98,6 @@ int** Flipper_EVN(int **MatViz, int lin, int col, int **Teste, int W)
 				MatViz[vallin][(valcol + 2)] ++;
 			}
 		}
-	}
 
 	return MatViz;
 }
@@ -123,8 +120,7 @@ int** Flipper_Moore(int **MatViz, int lin, int col, int **Teste, int W)
 		if (vallin < lin && valcol >= col)
 			valcol = 0;
 	}
-	if (vallin < lin && valcol < col)
-	{
+
 		//verifica se a linha de cima está no intervalo [0,lin)
 		if ((vallin - 1) >= 0)
 		{
@@ -167,7 +163,7 @@ int** Flipper_Moore(int **MatViz, int lin, int col, int **Teste, int W)
 		{
 			MatViz[vallin][(valcol + 1)] ++;
 		}
-	}
+
 
 	return MatViz;
 }
@@ -190,8 +186,7 @@ int** Flipper_Manhattan(int **MatViz, int lin, int col, int **Teste, int W)
 		if (vallin < lin && valcol >= col)
 			valcol = 0;
 	}
-	if (vallin < lin && valcol < col)
-	{
+
 		//verifica se a linha de cima está no intervalo [0,lin)
 		if ((vallin - 1) >= 0)
 		{
@@ -249,7 +244,7 @@ int** Flipper_Manhattan(int **MatViz, int lin, int col, int **Teste, int W)
 				MatViz[vallin][(valcol + 2)] ++;
 			}
 		}
-	}
+
 
 	return MatViz;
 }
